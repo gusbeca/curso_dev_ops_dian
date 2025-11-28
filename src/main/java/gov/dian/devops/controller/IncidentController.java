@@ -14,9 +14,8 @@ import java.util.Map;
 @RequestMapping("/api/incident")
 public class IncidentController {
 
-	@GetMapping("/ping")
-	public ResponseEntity<Map<String, String>> ping() {
-		return ResponseEntity.ok(Map.of("message", "pong"));
-	}
-
+    @GetMapping("/ping")
+    public ResponseEntity<Map<String, String>> ping() {
+        return ResponseEntity.ok(Map.of("message", "pong"));
+    }
 }
